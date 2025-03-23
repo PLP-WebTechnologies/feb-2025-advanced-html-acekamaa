@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Practicing html development</title>
+</head>
+
+<body>
+    <h2>This website contains: </h2>
+    <ol type="i">
+        <li>An image</li>
+        <li>A table</li>
+        <li>A registration form</li>
+    </ol>
+
+    <h2>Image</h2>
+    <img src="./housebg.jpg" alt="Placeholder image" width="300" height="500">
+
+    <h2>Contacts</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Mobile no.</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>1003 Kahas Street</td>
+            <td>john@gmail.com</td>
+            <td>0712155677</td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>3324 Sarava Street</td>
+            <td>mary@gmail.com</td>
+            <td>0799894568</td>
+        </tr>
+        <tr>
+            <td>Helena</td>
+            <td>4434 Trench</td>
+            <td>helena@outlook.com</td>
+            <td>0113586498</td>
+        </tr>
+        <tr>
+            <td>Gerald</td>
+            <td>4550 New State</td>
+            <td>gerald@outlook.com</td>
+            <td>0788754893</td>
+        </tr>
+        <tr>
+            <td>Yvonne</td>
+            <td>1002 City Bus Stop</td>
+            <td>yvonne@gmail.com</td>
+            <td>0799832340</td>
+        </tr>
+    </table>
+
+    <form method="" action="post">
+        <h2>Sign Up Form</h2>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <!-- dropdown-->
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- radio buttons -->
+        <div>
+            <label for="status">Status:</label>
+            <input type="radio" id="status" name="status" value="single" required>Single
+            <input type="radio" id="status" name="status" value="married" required>Married
+        </div>
+        
+        <!-- check boxes -->
+        <div>
+            <label for="qualifications">Qualifications:</label>
+            <input type="checkbox" id="graduate" name="Graduate[]" value="reading">Graduate</input>
+            <input type="checkbox" id="phd" name="Graduate[]" value="phd">PhD</input>
+            <input type="checkbox" id="postgraduate" name="Graduate[]" value="postgraduate">Postgraduate</input>
+        </div>
+
+        <!-- submit button -->
+        <div>
+            <button type="submit" value="Submit">Submit</button>
+            <input type="hidden" name="submitted" value="true">
+            <button type="reset" value="Reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
